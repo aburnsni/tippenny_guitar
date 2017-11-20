@@ -28,10 +28,10 @@ const bool DEBUG = 0;
 int strum = 5;  // delay between each note of strum
 
 // All I Want For Christmas is You
-//char style = 'c';   // Valid options = "n" for notes or "c" for chords
-//int* song[] = {CHORD_G, CHORD_Em, CHORD_C, CHORD_D, CHORD_Cm6_Eb, CHORD_B7, CHORD_E7, CHORD_Am9, CHORD_Am7b5_D, CHORD_D7, CHORD_D7add13, CHORD_Em7};
-//int midiChannel[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
-//int instruments[] = {26, 999, 999, 999, 999, 999, 999, 999, 999, 999 /*Drums*/, 999, 999, 999, 999, 999, 999};
+char style = 'c';   // Valid options = "n" for notes or "c" for chords
+int* song[] = {CHORD_G, CHORD_Em, CHORD_C, CHORD_D, CHORD_Cm6_Eb, CHORD_B7, CHORD_E7, CHORD_Am9, CHORD_Am7b5_D, CHORD_D7, CHORD_D7add13, CHORD_Em7};
+int midiChannel[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+int instruments[] = {26, 999, 999, 999, 999, 999, 999, 999, 999, 999 /*Drums*/, 999, 999, 999, 999, 999, 999};
 
 // Simple Chords
 //char style = 'c';
@@ -46,10 +46,10 @@ int strum = 5;  // delay between each note of strum
 //int instruments[] = {26, 999, 999, 999, 999, 999, 999, 999, 999, 999 /*Drums*/, 999, 999, 999, 999, 999, 999};
 
 // C Major scale
-char style = 'n';
-int* song[] = {NOTE_C4, NOTE_D4, NOTE_E4, NOTE_F4, NOTE_G4, NOTE_A4, NOTE_B4, NOTE_C5, NOTE_D5, NOTE_E5, NOTE_F5, NOTE_G5};
-int midiChannel[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}; // midi channel for each button
-int instruments[] = {102, 999, 999, 999, 999, 999, 999, 999, 999, 999 /*Drums*/, 999, 999, 999, 999, 999, 999};
+//char style = 'n';
+//int* song[] = {NOTE_C4, NOTE_D4, NOTE_E4, NOTE_F4, NOTE_G4, NOTE_A4, NOTE_B4, NOTE_C5, NOTE_D5, NOTE_E5, NOTE_F5, NOTE_G5};
+//int midiChannel[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}; // midi channel for each button
+//int instruments[] = {102, 999, 999, 999, 999, 999, 999, 999, 999, 999 /*Drums*/, 999, 999, 999, 999, 999, 999};
 
 // Charlieplex LED setup
 #define A 9
