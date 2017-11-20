@@ -153,7 +153,7 @@ void loop() {
   lasttouched = currtouched;
 
   // put a delay so it isn't overwhelming
-  delay(20);
+  delay(1);
 }
 
 void playChord(int i[], int channel) {
