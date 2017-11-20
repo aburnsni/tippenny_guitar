@@ -22,7 +22,7 @@ uint16_t lasttouched = 0;
 uint16_t currtouched = 0;
 
 // Change these only!!!
-const bool DEBUG = 1;
+const bool DEBUG = 0;
 
 
 int strum = 5;  // delay between each note of strum
