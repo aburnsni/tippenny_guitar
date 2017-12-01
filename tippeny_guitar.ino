@@ -28,9 +28,15 @@ const bool DEBUG = 0;
 int strum = 5;  // delay between each note of strum
 
 // All I Want For Christmas is You
+// char style = 'c';   // Valid options = "n" for notes or "c" for chords
+// int* song[] = {CHORD_G, CHORD_Em, CHORD_C, CHORD_D, CHORD_Cm6_Eb, CHORD_B7, CHORD_E7, CHORD_Am9, CHORD_Am7b5_D, CHORD_D7, CHORD_D7add13, CHORD_Em7};
+// int midiChannel[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+// int instruments[] = {26, 999, 999, 999, 999, 999, 999, 999, 999, 999 /*Drums*/, 999, 999, 999, 999, 999, 999};
+
+// Jingle Bell Rock
 char style = 'c';   // Valid options = "n" for notes or "c" for chords
-int* song[] = {CHORD_G, CHORD_Em, CHORD_C, CHORD_D, CHORD_Cm6_Eb, CHORD_B7, CHORD_E7, CHORD_Am9, CHORD_Am7b5_D, CHORD_D7, CHORD_D7add13, CHORD_Em7};
-int midiChannel[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+int* song[] = {CHORD_Ab, CHORD_Bbm7, CHORD_Eb7, CHORD_Eb7s5, CHORD_Db, CHORD_Ddim, CHORD_Fm7, CHORD_Bb7, CHORD_F7s5, CHORD_F7, CHORD_Dbm6, BELLS};
+int midiChannel[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 10};
 int instruments[] = {26, 999, 999, 999, 999, 999, 999, 999, 999, 999 /*Drums*/, 999, 999, 999, 999, 999, 999};
 
 // Simple Chords
@@ -142,12 +148,11 @@ void loop() {
         if (style == 'n') {
           MIDI.sendNoteOff(song[i], 100, midiChannel[i]);
         } else if (style == 'c' && song[i]) {
-          //  Nothing to do
+          //  stopChord(song[i], midiChannel[i]);
         }
       }
     }
   }
-
 
   // reset our state
   lasttouched = currtouched;
@@ -160,6 +165,15 @@ void playChord(int i[], int channel) {
   for (uint8_t note = 0; note < 6; note++) {
     if (i[note]) {
       MIDI.sendNoteOn((i[note]), 100, channel);
+      delay(strum);
+    }
+  }
+}
+
+void stopChord(int i[], int channel) {
+  for (uint8_t note = 0; note < 6; note++) {
+    if (i[note]) {
+      MIDI.sendNoteOff((i[note]), 100, channel);
       delay(strum);
     }
   }
