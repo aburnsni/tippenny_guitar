@@ -36,6 +36,7 @@ int strum = 5;  // delay between each note of strum
 // Jingle Bell Rock
 char style = 'c';   // Valid options = "n" for notes or "c" for chords
 int* song[] = {CHORD_Ab, CHORD_Bbm7, CHORD_Eb7, CHORD_Eb7s5, CHORD_Db, CHORD_Ddim, CHORD_Fm7, CHORD_Bb7, CHORD_F7s5, CHORD_F7, CHORD_Dbm6, BELLS};
+//int* song[] = {CHORD_C, CHORD_Dm7, CHORD_G7, CHORD_G7s5, CHORD_F, CHORD_Fsdim, CHORD_Am7, CHORD_D7, CHORD_Em7s5, CHORD_A7, CHORD_Fm6, BELLS};
 int midiChannel[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 10};
 int instruments[] = {26, 999, 999, 999, 999, 999, 999, 999, 999, 999 /*Drums*/, 999, 999, 999, 999, 999, 999};
 
