@@ -2,7 +2,7 @@
  * Copyright (c) 2017 Andrew Burns
  * Licensed under The MIT License (MIT)
  * License: ./LICENSE
- * Filenames: tippeny_guitar.ino, midi_chords.h, midi_notes.h
+ * Filenames: tippenny_guitar.ino, midi_chords.h, midi_notes.h
  * Board: Arduino Uno R3
  * Shield: Adafruit MPR121 touch shield
  */
