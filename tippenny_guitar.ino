@@ -34,11 +34,11 @@ int strum = 5;  // delay between each note of strum
 // int instruments[] = {26, 999, 999, 999, 999, 999, 999, 999, 999, 999 /*Drums*/, 999, 999, 999, 999, 999, 999};
 
 // Jingle Bell Rock
-char style = 'c';   // Valid options = "n" for notes or "c" for chords
-int* song[] = {CHORD_Ab, CHORD_Bbm7, CHORD_Eb7, CHORD_Eb7s5, CHORD_Db, CHORD_Ddim, CHORD_Fm7, CHORD_Bb7, CHORD_F7s5, CHORD_F7, CHORD_Dbm6, BELLS};
-//int* song[] = {CHORD_C, CHORD_Dm7, CHORD_G7, CHORD_G7s5, CHORD_F, CHORD_Fsdim, CHORD_Am7, CHORD_D7, CHORD_Em7s5, CHORD_A7, CHORD_Fm6, BELLS};
-int midiChannel[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 10};
-int instruments[] = {26, 999, 999, 999, 999, 999, 999, 999, 999, 999 /*Drums*/, 999, 999, 999, 999, 999, 999};
+// char style = 'c';   // Valid options = "n" for notes or "c" for chords
+// int* song[] = {CHORD_Ab, CHORD_Bbm7, CHORD_Eb7, CHORD_Eb7s5, CHORD_Db, CHORD_Ddim, CHORD_Fm7, CHORD_Bb7, CHORD_F7s5, CHORD_F7, CHORD_Dbm6, BELLS};
+// //int* song[] = {CHORD_C, CHORD_Dm7, CHORD_G7, CHORD_G7s5, CHORD_F, CHORD_Fsdim, CHORD_Am7, CHORD_D7, CHORD_Em7s5, CHORD_A7, CHORD_Fm6, BELLS};
+// int midiChannel[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 10};
+// int instruments[] = {26, 999, 999, 999, 999, 999, 999, 999, 999, 999 /*Drums*/, 999, 999, 999, 999, 999, 999};
 
 // Simple Chords
 //char style = 'c';
@@ -47,10 +47,10 @@ int instruments[] = {26, 999, 999, 999, 999, 999, 999, 999, 999, 999 /*Drums*/, 
 //int instruments[] = {26, 999, 999, 999, 999, 999, 999, 999, 999, 999 /*Drums*/, 999, 999, 999, 999, 999, 999};  // instruments for each channel.  Setting to 999 prevents change
 
 // Diamonds are a Girls Best Friend
-//char style = 'c';
-//int* song[] = {CHORD_E, CHORD_B, CHORD_B7, CHORD_Gbm, CHORD_Gb, CHORD_E7, CHORD_A, CHORD_Dbm, CHORD_Gbm, CHORD_Db, CHORD_Am, 0}; 
-//int midiChannel[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
-//int instruments[] = {26, 999, 999, 999, 999, 999, 999, 999, 999, 999 /*Drums*/, 999, 999, 999, 999, 999, 999};
+char style = 'c';
+int* song[] = {CHORD_E, CHORD_B, CHORD_B7, CHORD_Gbm, CHORD_Gb, CHORD_E7, CHORD_A, CHORD_Dbm, CHORD_Abm, CHORD_Db, 0, 0}; 
+int midiChannel[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+int instruments[] = {26, 999, 999, 999, 999, 999, 999, 999, 999, 999 /*Drums*/, 999, 999, 999, 999, 999, 999};
 
 // C Major scale
 //char style = 'n';
