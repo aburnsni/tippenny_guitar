@@ -149,7 +149,7 @@ void loop() {
         if (style == 'n') {
           MIDI.sendNoteOff(song[i], 100, midiChannel[i]);
         } else if (style == 'c' && song[i]) {
-          //  stopChord(song[i], midiChannel[i]);
+          stopChord(song[i], midiChannel[i]);
         }
       }
     }
@@ -187,4 +187,3 @@ void MIDIsoftreset()  // switch off ALL notes on channel 1 to 16
     MIDI.sendControlChange(123, 0, channel);
   }
 }
-
